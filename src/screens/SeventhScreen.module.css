@@ -1,0 +1,88 @@
+/* Base styles */
+.title {
+    font-family: "Assistant";
+    text-align: center;
+    direction: rtl;
+    width: 100%;
+    font-weight: 800;
+    color: black;
+    text-shadow: 
+        inset 2px 2px 4px rgba(0, 0, 0, 0.15),
+        2px 2px 4px rgba(0, 0, 0, 1);
+    background: linear-gradient(135deg, rgb(231, 163, 163) 30%, rgb(239, 174, 174) 50%, rgb(192, 126, 126) 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+/* Responsive styles */
+@media (max-width: 349px) {
+    .title { 
+        font-size: 1.5rem;
+        margin: 1% auto;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 449px) {
+    .title { 
+        font-size: 1.8rem;
+        margin: 1.2% auto;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 549px) {
+    .title { 
+        font-size: 2.1rem;
+        margin: 1.4% auto;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 649px) {
+    .title { 
+        font-size: 2.4rem;
+        margin: 1.6% auto;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 749px) {
+    .title { 
+        font-size: 2.6rem;
+        margin: 1.8% auto;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 849px) {
+    .title { 
+        font-size: 2.7rem;
+        margin: 1.9% auto;
+    }
+}
+
+@media (min-width: 850px) and (max-width: 949px) {
+    .title { 
+        font-size: 2.8rem;
+        margin: 2% auto;
+    }
+}
+
+@media (min-width: 950px) and (max-width: 1049px) {
+    .title { 
+        font-size: 2.9rem;
+        margin: 2% auto;
+    }
+}
+
+@media (min-width: 1050px) and (max-width: 1149px) {
+    .title { 
+        font-size: 2.95rem;
+        margin: 2% auto;
+    }
+}
+
+@media (min-width: 1150px) {
+    .title { 
+        font-size: 3rem;
+        margin: 2% auto;
+    }
+}

@@ -1,0 +1,165 @@
+/* Base styles */
+.description {
+  font-size: 1.4rem;
+  font-family: "AssistantR";
+  text-align: center;
+  margin: 2% auto;
+  direction: rtl;
+  font-weight: 300;
+  width: 90%;
+  color: black;
+  line-height: 1.6;
+}
+
+.title {
+  font-size: 3rem;
+  font-family: "Assistant";
+  text-align: center;
+  margin: 3% auto;
+  direction: rtl;
+  width: 100%;
+  font-weight: 800;
+  color: black;
+  text-shadow: 
+      inset 2px 2px 4px rgba(0, 0, 0, 0.15),
+      2px 2px 4px rgba(0, 0, 0, 1);
+  background: linear-gradient(135deg, rgb(231, 163, 163) 30%, rgb(239, 174, 174) 50%, rgb(192, 126, 126) 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  line-height: 1.3;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3% auto;
+  direction: rtl;
+  flex-wrap: wrap;
+}
+
+.bold {
+  font-size: 1.4rem;
+  text-align: center;
+  display: inline;
+  margin: 2% auto;
+  direction: rtl;
+  font-weight: 700;
+  width: 90%;
+  color: black;
+  line-height: 1.6;
+}
+
+.center {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  margin: 2% auto;
+}
+
+.image {
+  object-fit: contain;
+  width: 100%;
+}
+
+/* Media Queries */
+@media (max-width: 349px) {
+  .description, .bold {
+    font-size: 1.1rem;
+    margin: 4% auto;
+    line-height: 1.8;
+  }
+  .title {
+    font-size: 2rem;
+    margin: 5% auto;
+    line-height: 1.4;
+  }
+  .center {
+    width: 95%;
+    margin: 4% auto;
+  }
+  .row {
+    margin: 5% auto;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 450px) {
+  .description, .bold {
+    font-size: 1.2rem;
+    margin: 3.5% auto;
+    line-height: 1.4;
+  }
+  .title {
+    font-size: 2rem;
+    margin: 4.5% auto;
+    line-height: 1.2;
+  }
+  .center {
+    width: 90%;
+    margin: 3.5% auto;
+  }
+  .row {
+    margin: 4.5% auto;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 550px) {
+  .description, .bold {
+    font-size: 1.3rem;
+    margin: 3% auto;
+    line-height: 1.65;
+  }
+  .title {
+    font-size: 2.4rem;
+    margin: 4% auto;
+  }
+  .center {
+    width: 80%;
+    margin: 3% auto;
+  }
+  .row {
+    margin: 4% auto;
+  }
+}
+
+@media (min-width: 551px) and (max-width: 650px) {
+  .description, .bold {
+    font-size: 1.35rem;
+    margin: 2.5% auto;
+  }
+  .title {
+    font-size: 2.6rem;
+    margin: 3.5% auto;
+  }
+  .center {
+    width: 75%;
+    margin: 2.5% auto;
+  }
+  .row {
+    margin: 3.5% auto;
+  }
+}
+
+@media (min-width: 651px) and (max-width: 750px) {
+
+  .center {
+    width: 70%;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 850px) {
+
+  .center {
+    width: 45%;
+  }
+}
+
+@media (min-width: 851px) and (max-width: 1250px) {
+
+  .center {
+    width: 42%;
+  }
+}
