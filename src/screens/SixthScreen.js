@@ -3,9 +3,9 @@ import styles from './SixthScreen.module.css';
 
 const SixthScreen = () => {
   const courses = [
-    { id: 1, title: 'השתלמות שיווק וסושיאל באורך 3 שעות' },
-    { id: 2, title: 'השתלמות למאפרות מתחילות' },
-    { id: 3, title: 'השתלמות למאפרות וותיקות' },
+    { id: 1, title: 'השתלמות שיווק וסושיאל פרטית ומותאמת אישית' },
+    { id: 2, title: 'השתלמות איפור למאפרות מתחילות' },
+    { id: 3, title: 'השתלמות איפור למאפרות וותיקות' },
   ];
 
   const handleCourseClick = (course) => {
@@ -23,6 +23,7 @@ const SixthScreen = () => {
 
   return (
     <div className={styles.container}>
+       <div className={styles.description}>וכמובן שהקורס הוא לא הכל! יש לך הזדמנות להפגש איתי פנים מול פנים ולקבל הרבה יותר מזה</div>
       <h1 className={styles.title}>
         קורסים פרונטלים נוספים שאני מעבירה
       </h1>

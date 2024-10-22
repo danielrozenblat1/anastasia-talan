@@ -4,6 +4,7 @@ import ByMe from './components/ByMe/ByMe';
 import AboutMe from './components/me/Me';
 import NavBarNew from './components/NewNav/NavBarNew';
 import Sillabus from './components/sillabus/Sillabus';
+import EightScreen from './screens/EightScreen';
 import FifthScreen from './screens/FifthScreen';
 import FirstScreen from './screens/FirstScreen';
 import ForthScreen from './screens/ForthScreen';
@@ -19,8 +20,9 @@ function App() {
   <SecondScreen/>
   <ThirdScreen/>
   <Sillabus/>
-  <ForthScreen/>
+  {/* <ForthScreen/> */}
   <SixthScreen/>
+  <EightScreen/>
   <AboutMe/>
   <FifthScreen/>
   <SeventhScreen/>

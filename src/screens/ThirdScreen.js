@@ -1,7 +1,7 @@
 import IconTextComponent from "../components/can/Can"
 import styles from "./ThirdScreen.module.css"
 import fault from "../Icons/wired-lineal-25-error-cross-hover-pinch.json"
-import anastasiaInsta from "../images/אינסטסיה טלן אינסטגרם.png"
+import anastasiaInsta from "../images/אנסטסיה תלן אינסטגרם.png"
 const ThirdScreen=()=>{
 
 
@@ -14,8 +14,8 @@ return <>
 
     </div> */}
 
-    <div className={styles.description}>מאז שהתחילה הקורונה הבנתי את כוח של הרשתות החברתיות וכמה להיות נוכחת בסושיאל <div className={styles.bold}>יכול לשנות את החיים שלך!</div></div>
-    <div className={styles.description}>אז התחלתי לצאת לכנסים, לקחתי השתלמויות וקורסים באלפי שקלים והשקעתי המון עד למצב שהכלי הזה שנקרא אינסטגרם <div className={styles.bold}>עובד בשבילי</div></div>
+    <div className={styles.description}> לאהוב איפור ולאפר יפה לא מספיק כדי למלא יומן. למדתי על בשרי בדרך הקשה איך להפוך את התחביב שלי למקור פרנסה היחיד שלי ולהיות בעלת עסק מצליח.</div>
+    <div className={styles.description}>לאורך השנים הלכתי לכנסים, לקחתי השתלמויות וקורסים באלפי שקלים, השקעתי המון זמן מאמץ וכסף כדי להגיע לנקודה בה הכלי הזה שנקרא אינסטגרם <div className={styles.bold}>עובד בשבילי</div></div>
     <div className={styles.center}><img className={styles.image} alt="אנסטסיה טלן" src={anastasiaInsta}/></div>
     <div className={styles.title}>ואחרי שהצלחתי בעצמי</div>
     {/* <div className={styles.description}>ואם בתחילת דרכי הייתי מקבלת את הכלים והידע שצברתי עד היום- מיסטר חכים (בעלי למי שלא עוקבת..) היה מודה לי מאוד - כי הידע שצברתי הגיע עשרות אלפי שקלים  </div> */}

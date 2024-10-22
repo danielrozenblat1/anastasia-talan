@@ -11,7 +11,7 @@ const syllabusData = [
   { icon: Instagram, title: 'שיעור 4', description: 'הבנה עמוקה של האלגוריתם וקהל היעד שלך באינסטגרם' },
   { icon: Users, title: 'שיעור 5', description: 'בנייה של פרופיל חזק ומושך שיכניס לך עוקבים ולידים באופן קבוע' },
   { icon: Camera, title: 'שיעור 6', description: 'איך לבנות סטורי חזק שתמיד תהי ראשונה אצל העוקבות שלך' },
-  { icon: Video, title: 'שיעור 7', description: 'כל הסודות לרילס ופוסט ויראלי' },
+  { icon: Video, title: 'שיעור 7', description: 'כל הסודות לרילס ופוסט ויראלי שמביא לידים אמיתיים בלי ממומן' },
   { icon: List, title: 'שיעור 8', description: 'רשימת תכנים למאפרות שגורמים לרילסים שלי להתפוצץ כל פעם מחדש' },
 ];
 
@@ -33,7 +33,7 @@ const Sillabus = () => {
     return (
         <>
             <div className={styles.subtitle}>הקורס הוא דיגיטלי והוא מורכב מ-8 שיעורים</div>
-            <div className={styles.explain}>ככה שתוכלי לעבור על כל שיעור מתי שאת יכולה, כמה זמן שאת צריכה וכמובן שמהרגע שרכשת אותו הוא שלך לתמיד! תמיד תוכלי לחזור אליו ולעבור על השיעורים מחדש!</div>
+            <div className={styles.explain}>השיעורים קצרים,יעילים והכי חשוב - מדוייקים (כי אין על ישר ולעניין)</div>
             <div className={styles.header}>וזה הולך ככה..</div>
             <div className={styles.container}>
                 <div className={styles.sillabus}>
@@ -48,7 +48,7 @@ const Sillabus = () => {
                     ))}
                 </div>
             </div>
-            <SellButton text="אנסטסיה, אני רוצה לרכוש את הקורס!"/>
+            <SellButton text="אנסטסיה, אני רוצה לרכוש את הקורס!" url="https://meshulam.co.il/purchase?b=f1a9a803b2a4a7cc8357c97ff1a913f6"/>
         </>
     );
 };

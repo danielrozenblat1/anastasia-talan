@@ -48,8 +48,9 @@ const FirstScreen = () => {
         <h1 className={styles.title}>ANASTASIA TALAN HAKIM</h1>
   
         <div className={styles.buttonContainer}>
-        <PinkScrollButton text="אני מאפרת על חלל" icon={makeup} to="מאפרת"/>
         <PinkScrollButton text="אני עומדת להתחתןןןן" icon={ring} to="כלה"/>
+        <PinkScrollButton text="אני מאפרת על חלל" icon={makeup} to="מאפרת"/>
+  
         </div>
       </div>
     </div>

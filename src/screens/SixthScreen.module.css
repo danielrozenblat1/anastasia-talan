@@ -6,6 +6,16 @@
     margin: 2% auto;
     overflow-x: hidden;
 }
+.description {
+    font-size: 1.4rem;
+    font-family: "AssistantR";
+    text-align: center;
+    margin: 2% auto;
+    direction: rtl;
+    font-weight: 300;
+    width: 90%;
+    color: black;
+  }
   
 .title {
     font-size: 3rem;
@@ -113,7 +123,7 @@
   
 .text {
     flex: 1;
-    text-align: right;
+    text-align: center;
     padding-right: 20px;
 }
   
@@ -160,7 +170,7 @@
         font-size: 2rem;
     }
     .subtitle {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     .button {
         font-size:1rem;
@@ -170,6 +180,9 @@
     .text {
         padding-right: 8px;
     }
+    .description {
+        font-size: 1.1rem;
+    }
 }
   
 @media (min-width: 351px) and (max-width: 450px) {
@@ -177,7 +190,10 @@
         font-size: 2.2rem;
     }
     .subtitle {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
+    }
+    .description {
+        font-size: 1.15rem;
     }
     .button {
         font-size:1.1rem;
@@ -200,6 +216,9 @@
         font-size: 1.05rem;
         padding: 12px 18px;
     }
+    .description {
+        font-size: 1.2rem;
+    }
 }
   
 @media (min-width: 551px) and (max-width: 650px) {
@@ -213,6 +232,9 @@
         font-size: 1.1rem;
         padding: 13px 20px;
     }
+    .description {
+        font-size: 1.25rem;
+    }
 }
   
 @media (min-width: 651px) and (max-width: 750px) {
@@ -220,6 +242,9 @@
         font-size: 2.7rem;
     }
     .subtitle {
+        font-size: 1.3rem;
+    }
+    .description {
         font-size: 1.3rem;
     }
 }
@@ -231,6 +256,9 @@
     .subtitle {
         font-size: 1.35rem;
     }
+    .description {
+        font-size: 1.3rem;
+    }
 }
   
 @media (min-width: 851px) and (max-width: 950px) {
@@ -239,6 +267,9 @@
     }
     .subtitle {
         font-size: 1.37rem;
+    }
+    .description {
+        font-size: 1.35rem;
     }
 }
   
