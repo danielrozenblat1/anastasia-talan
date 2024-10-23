@@ -3,7 +3,7 @@ import styles from './SixthScreen.module.css';
 
 const SixthScreen = () => {
   const courses = [
-    { id: 1, title: 'השתלמות שיווק וסושיאל פרטית ומותאמת אישית' },
+    { id: 1, title: 'השתלמות שיווק וסושיאל פרטית מותאמת אישית' },
     { id: 2, title: 'השתלמות איפור למאפרות מתחילות' },
     { id: 3, title: 'השתלמות איפור למאפרות וותיקות' },
   ];

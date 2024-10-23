@@ -9,7 +9,16 @@
     width: 90%;
     color: black;
 }
-
+.center{
+    width:30%;
+    display: flex;
+    margin:2% auto;
+    justify-content: center;
+}
+.image{
+    object-fit: contain;
+    width: 100%;
+}
 .title {
     font-size: 3rem;
     font-family: "Assistant";

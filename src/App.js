@@ -23,8 +23,9 @@ function App() {
   {/* <ForthScreen/> */}
   <SixthScreen/>
   <EightScreen/>
-  <AboutMe/>
+
   <FifthScreen/>
+  <AboutMe/>
   <SeventhScreen/>
   <ByMe/>
   </>

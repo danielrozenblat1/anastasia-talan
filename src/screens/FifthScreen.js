@@ -9,6 +9,7 @@ import Recommends from "../components/recommends/Recommends"
 import meet from "../Icons/wired-outline-981-consultation-hover-conversation (1).json"
 import party from "../Icons/wired-outline-1103-confetti-hover-pinch.json"
 import MessageButton from "../components/MessageButton/Button"
+import bikorot from "../images/אנסטסיה ביקורות כלות.png"
 const FifthScreen=()=>{
 
 
@@ -35,6 +36,8 @@ return <>
     <div className={styles.title}>טעימה לכלות ולנשים שבחרו בי</div>
     <Recommends/>
     <MessageButton text="אנסטסיה התארסתייי , בואי נדבר!" message="היי אנסטסיה, אני רוצה לשמוע עוד לגבי איפור לחתונה"/>
+    <div className={styles.title}>כדי לשמוע מהן עוד לחצי על התמונה</div>
+    <div className={styles.center}><a target="_blank" href="https://www.mit4mit.co.il/biz/99556"><img className={styles.image} src={bikorot} alt="כלות ממליצות אנסטסיה טלן"/></a></div>
 </>
 
 

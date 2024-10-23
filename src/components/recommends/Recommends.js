@@ -1,9 +1,19 @@
 import styles from "./Recommends.module.css"
-import result1 from "../../images/אנסטסיה טלן כלה 1.png"
-import result2 from "../../images/אנסטסיה טלן כלה 2.png"
-import result3 from "../../images/אנסטסיה טלן כלה 3.png"
-import result4 from "../../images/אנסטסיה טלן כלה 4.png"
-import result5 from "../../images/אנסטסיה תמונה שמאל.png"
+import result1 from "../../images/אנסטסיה טלן כלות 1.png"
+import result2 from "../../images/אנסטסיה טלן כלות 2.png"
+import result3 from "../../images/אנסטסיה טלן כלות 3.png"
+import result4 from "../../images/אנסטסיה טלן כלות 4.png"
+import result5 from "../../images/אנסטסיה טלן כלות 5.png"
+import result6 from "../../images/אנסטסיה טלן כלות 6.png"
+import result7 from "../../images/אנסטסיה טלן כלות 7.png"
+import result8 from "../../images/אנסטסיה טלן כלות 8.png"
+import result9 from "../../images/אנסטסיה טלן כלות 9.png"
+import result10 from "../../images/אנסטסיה טלן כלות 10.png"
+import result11 from "../../images/אנסטסיה טלן כלות 11.png"
+import result12 from "../../images/אנסטסיה טלן כלות 12.png"
+import result13 from "../../images/אנסטסיה טלן כלות 13.png"
+import result14 from "../../images/אנסטסיה טלן כלות 14.png"
+
 
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -26,35 +36,63 @@ const Recommends=()=>{
                      
       };
       const content = [
-
-        {
-          type: 'image',
-          src: result5,
-        }, 
-      
-     
-      
         {
           type: 'image',
           src: result1,
-        }, 
-      
-        {
-          type: 'image',
-          src: result4,
-        }, 
+        },
         {
           type: 'image',
           src: result2,
         },
-        
-        
         {
           type: 'image',
           src: result3,
         },
-       
-        ];  
+        {
+          type: 'image',
+          src: result4,
+        },
+        {
+          type: 'image',
+          src: result5,
+        },
+        {
+          type: 'image',
+          src: result6,
+        },
+        {
+          type: 'image',
+          src: result7,
+        },
+        {
+          type: 'image',
+          src: result8,
+        },
+        {
+          type: 'image',
+          src: result9,
+        },
+        {
+          type: 'image',
+          src: result10,
+        },
+        {
+          type: 'image',
+          src: result11,
+        },
+        {
+          type: 'image',
+          src: result12,
+        },
+        {
+          type: 'image',
+          src: result13,
+        },
+        {
+          type: 'image',
+          src: result14,
+        }
+     ];
 return <>
 
 <div className={styles.sliderContainer}>
