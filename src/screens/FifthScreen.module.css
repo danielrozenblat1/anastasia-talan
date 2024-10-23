@@ -72,48 +72,72 @@
     .description { font-size: 1rem; }
     .title { font-size: 1.5rem; }
     .subtitle { font-size: 1rem; }
+    .center{
+        width:80%;
+    }
 }
 
 @media (min-width: 350px) and (max-width: 449px) {
     .description { font-size: 1.05rem; }
     .title { font-size: 1.8rem; }
     .subtitle { font-size: 1.1rem; }
+    .center{
+        width:75%;
+    }
 }
 
 @media (min-width: 450px) and (max-width: 549px) {
     .description { font-size: 1.1rem; }
     .title { font-size: 2.1rem; }
     .subtitle { font-size: 1.2rem; }
+    .center{
+        width:70%;
+    }
 }
 
 @media (min-width: 550px) and (max-width: 649px) {
     .description { font-size: 1.15rem; }
     .title { font-size: 2.4rem; }
     .subtitle { font-size: 1.3rem; }
+    .center{
+        width:60%;
+    }
 }
 
 @media (min-width: 650px) and (max-width: 749px) {
     .description { font-size: 1.2rem; }
     .title { font-size: 2.6rem; }
     .subtitle { font-size: 1.4rem; }
+    .center{
+        width:55%;
+    }
 }
 
 @media (min-width: 750px) and (max-width: 849px) {
     .description { font-size: 1.3rem; }
     .title { font-size: 2.8rem; }
     .subtitle { font-size: 1.45rem; }
+    .center{
+        width:50%;
+    }
 }
 
 @media (min-width: 850px) and (max-width: 949px) {
     .description { font-size: 1.35rem; }
     .title { font-size: 2.9rem; }
     .subtitle { font-size: 1.47rem; }
+    .center{
+        width:45%;
+    }
 }
 
 @media (min-width: 950px) and (max-width: 1049px) {
     .description { font-size: 1.37rem; }
     .title { font-size: 2.95rem; }
     .subtitle { font-size: 1.48rem; }
+    .center{
+        width:40%;
+    }
 }
 
 @media (min-width: 1050px) and (max-width: 1149px) {
