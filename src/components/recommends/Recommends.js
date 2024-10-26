@@ -77,7 +77,10 @@ const Recommends=()=>{
           type: 'image',
           src: result10,
         },
-  
+        {
+          type: 'image',
+          src: result11,
+        },
         {
           type: 'image',
           src: result12,
