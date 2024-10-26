@@ -9,7 +9,7 @@ import result7 from "../../images/אנסטסיה טלן כלות 7.png"
 import result8 from "../../images/אנסטסיה טלן כלות 8.png"
 import result9 from "../../images/אנסטסיה טלן כלות 9.png"
 import result10 from "../../images/אנסטסיה טלן כלות 10.png"
-
+import result11 from "../../images/אנסטסיה טלן כלות 11.png"
 import result12 from "../../images/אנסטסיה טלן כלות 12.png"
 import result13 from "../../images/אנסטסיה טלן כלות 13.png"
 import result14 from "../../images/אנסטסיה טלן כלות 14.png"
