@@ -15,6 +15,7 @@ import result13 from "../../images/אנסטסיה טלן כלות 13.png"
 import result14 from "../../images/אנסטסיה טלן כלות 14.png"
 import result15 from "../../images/אנסטסיה טלן כלות 15.png"
 import result16 from "../../images/אנסטסיה טלן כלות 16.png"
+import result18 from "../../images/אנסטסיה טלן כלות 18.png"
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -40,7 +41,10 @@ const Recommends=()=>{
           type: 'image',
           src: result1,
         },
-       
+        {
+          type: 'image',
+          src: result18,
+        },
         {
           type: 'image',
           src: result2,
