@@ -1,0 +1,45 @@
+.container {
+    direction: rtl;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .highlightItem {
+    display: flex;
+    align-items: center;
+
+  }
+  
+  .icon {
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+    object-fit: contain;
+  }
+  
+  .text {
+    font-family: 'AssistantR', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: #281916;
+  }
+  
+  .importantNote {
+    font-family: 'Assistant', sans-serif;
+    font-size: 1.5rem;
+    color: #281916;
+    text-align: center;
+margin:10px auto 0;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 600px) {
+    .text {
+      font-size: 1.1rem;
+    }
+    
+    .importantNote {
+      font-size: 1.3rem;
+    }
+  }

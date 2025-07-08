@@ -1,0 +1,154 @@
+/* Base styles */
+.description {
+    font-size: 1.25rem;
+    font-family: "AssistantR";
+    text-align: center;
+    margin: 1% auto;
+    
+    font-weight: 300;
+    padding-top: 80px;
+    width: 90%;
+    color: black;
+}
+.center{
+    width:30%;
+    display: flex;
+    margin:2% auto;
+    justify-content: center;
+}
+.image{
+    object-fit: contain;
+    width: 100%;
+}
+.title {
+    font-size: 2.6rem;
+    font-family: "Assistant";
+    text-align: center;
+    margin: 1% auto;
+    
+    width: 100%;
+    font-weight: 800;
+    color: black;
+    text-shadow: 
+        inset 2px 2px 4px rgba(0, 0, 0, 0.15),
+        2px 2px 4px rgba(0, 0, 0, 1);
+    background: linear-gradient(135deg, rgb(231, 163, 163) 30%, rgb(239, 174, 174) 50%, rgb(192, 126, 126) 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    font-family: "Assistant";
+    text-align: center;
+    margin: 1% auto;
+    
+    width: 90%;
+    font-weight: 800;
+    color: black;
+    text-shadow: 
+        inset 2px 2px 4px rgba(0, 0, 0, 0.15),
+        2px 2px 4px rgba(0, 0, 0, 1);
+    background: linear-gradient(135deg, rgb(231, 163, 163) 30%, rgb(239, 174, 174) 50%, rgb(192, 126, 126) 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1% auto;
+    
+    flex-wrap: wrap;
+}
+
+/* Responsive styles */
+@media (max-width: 349px) {
+    .description { font-size: 1rem; }
+    .title { font-size: 1.5rem; }
+    .subtitle { font-size: 0.9rem; }
+    .center{
+        width:80%;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 449px) {
+    .description { font-size: 1.05rem; }
+    .title { font-size: 1.7rem; }
+    .subtitle { font-size: 0.95rem; }
+    .center{
+        width:75%;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 549px) {
+    .description { font-size: 1.1rem; }
+    .title { font-size: 1.9rem; }
+    .subtitle { font-size: 1rem; }
+    .center{
+        width:70%;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 649px) {
+    .description { font-size: 1.15rem; }
+    .title { font-size: 2.1rem; }
+    .subtitle { font-size: 1.05rem; }
+    .center{
+        width:60%;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 749px) {
+    .description { font-size: 1.18rem; }
+    .title { font-size: 2.3rem; }
+    .subtitle { font-size: 1.08rem; }
+    .center{
+        width:55%;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 849px) {
+    .description { font-size: 1.2rem; }
+    .title { font-size: 2.4rem; }
+    .subtitle { font-size: 1.1rem; }
+    .center{
+        width:50%;
+    }
+}
+
+@media (min-width: 850px) and (max-width: 949px) {
+    .description { font-size: 1.22rem; }
+    .title { font-size: 2.5rem; }
+    .subtitle { font-size: 1.12rem; }
+    .center{
+        width:45%;
+    }
+}
+
+@media (min-width: 950px) and (max-width: 1049px) {
+    .description { font-size: 1.23rem; }
+    .title { font-size: 2.55rem; }
+    .subtitle { font-size: 1.15rem; }
+    .center{
+        width:40%;
+    }
+}
+
+@media (min-width: 1050px) and (max-width: 1149px) {
+    .description { font-size: 1.24rem; }
+    .title { font-size: 2.6rem; }
+    .subtitle { font-size: 1.17rem; }
+}
+
+@media (min-width: 1150px) and (max-width: 1250px) {
+    .description { font-size: 1.25rem; }
+    .title { font-size: 2.6rem; }
+    .subtitle { font-size: 1.2rem; }
+}

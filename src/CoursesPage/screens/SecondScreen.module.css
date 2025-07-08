@@ -1,0 +1,554 @@
+/* MakeupCourse.module.css */
+
+.makeupCourseContainer {
+  padding: 2rem;
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.card {
+  max-width: 800px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 30px;
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    0 25px 45px rgba(248, 180, 195, 0.1),
+    0 10px 25px rgba(248, 180, 195, 0.05);
+  border: 1px solid rgba(250, 215, 225, 0.2);
+  position: relative;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(145deg, 
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(252, 248, 250, 0.08) 50%,
+    rgba(255, 255, 255, 0.12) 100%
+  );
+  pointer-events: none;
+  border-radius: 30px;
+}
+
+.imageContainer {
+  position: relative;
+  width: 80%;
+  height: 150px;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.imagePlaceholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, 
+    rgba(251, 242, 246, 0.6) 0%, 
+    rgba(253, 248, 250, 0.8) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 20px;
+}
+
+.placeholderIcon {
+  color: rgba(236, 138, 169, 0.4);
+  stroke-width: 1.5;
+}
+
+.placeholderText {
+  font-family: 'Assistant';
+  font-weight: 400;
+  font-size: 1rem;
+  color: rgba(180, 110, 150, 0.6);
+  margin: 0;
+  text-align: center;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+
+}
+
+.card:hover .image {
+  transform: scale(1.05);
+}
+
+.imageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(236, 138, 169, 0.1) 0%,
+    rgba(236, 138, 169, 0.25) 50%,
+    rgba(236, 138, 169, 0.4) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .imageOverlay {
+  opacity: 1;
+}
+
+.imageText {
+  text-align: center;
+  color: white;
+  padding: 1rem;
+}
+
+.imageTitle {
+  font-family: 'Assistant', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.imageSubtitle {
+  font-family: 'Assistant', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  text-align: center;
+  padding: 2rem 2rem 1rem;
+}
+
+.mainTitle {
+  font-family: 'AssistantR', sans-serif;
+  font-size: 2.5rem;
+  color: rgba(236, 138, 169, 0.8);
+  margin-bottom: 0.5rem;
+  background-clip: text;
+}
+
+.subtitle {
+  font-family: 'AssistantR', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.description {
+  padding: 1rem 2rem;
+}
+
+.sectionTitle {
+  font-family: 'Assistant', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: rgba(236, 138, 169, 0.8);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.courseDescription {
+  font-family: 'AssistantR', sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: rgba(55, 65, 81, 0.9);
+  line-height: 1.7;
+  text-align: center;
+  margin: 0;
+  padding: 1rem;
+  background: rgba(251, 242, 246, 0.3);
+  border-radius: 15px;
+  border: 1px solid rgba(236, 138, 169, 0.1);
+}
+
+.audienceList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.audienceItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0;
+  direction: rtl;
+}
+
+.bulletPoint {
+  width: 8px;
+  height: 8px;
+  background: linear-gradient(135deg, rgba(236, 138, 169, 0.5), rgba(248, 180, 195, 0.6));
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.audienceText {
+  font-family: 'AssistantR', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: rgba(55, 65, 81, 0.9);
+  text-align: right;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 2rem 2rem;
+  flex-direction: column;
+}
+
+.detailsButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 1.5rem;
+  background: rgba(251, 242, 246, 0.4);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(236, 138, 169, 0.2);
+  border-radius: 20px;
+  color: rgba(236, 138, 169, 0.8);
+  font-family: 'Assistant', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  direction: rtl;
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 4px 15px rgba(236, 138, 169, 0.08);
+}
+
+.detailsButton:hover {
+  background: linear-gradient(135deg, rgba(236, 138, 169, 0.7), rgba(248, 180, 195, 0.8));
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    0 8px 20px rgba(236, 138, 169, 0.2);
+}
+
+.purchaseButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 1.5rem;
+  background: linear-gradient(135deg, rgba(236, 138, 169, 0.8), rgba(248, 180, 195, 0.7));
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(236, 138, 169, 0.3);
+  border-radius: 20px;
+  color: white;
+  font-family: 'Assistant', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    0 4px 15px rgba(236, 138, 169, 0.2);
+  direction: rtl;
+}
+
+.purchaseButton:hover {
+  background: linear-gradient(135deg, rgba(220, 120, 150, 0.9), rgba(236, 138, 169, 0.8));
+  transform: translateY(-2px);
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.3),
+    0 8px 25px rgba(236, 138, 169, 0.3);
+}
+
+/* המגירה החיצונית - עיצוב זכוכית מיוחד */
+.drawer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  background: rgba(252, 248, 250, 0.3);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border-top: 1px solid rgba(250, 215, 225, 0.15);
+}
+
+.drawerOpen {
+  max-height: 2000px;
+  overflow: visible; /* Allow content to be fully visible when open */
+}
+
+.drawerContent {
+  padding: 2rem;
+  position: relative;
+}
+
+.drawerContent::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(145deg, 
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(252, 248, 250, 0.05) 50%,
+    rgba(255, 255, 255, 0.08) 100%
+  );
+  pointer-events: none;
+  border-radius: 0 0 30px 30px;
+}
+
+.drawerTitle {
+  font-family: 'Assistant', sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: rgba(236, 138, 169, 0.8);
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.detailsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.detailItem {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 1.5rem;
+  border: 1px solid rgba(250, 215, 225, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.15),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.05),
+    0 4px 15px rgba(236, 138, 169, 0.06);
+}
+
+.detailItem::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(248, 180, 195, 0.12), transparent);
+  transition: right 0.5s ease;
+}
+
+.detailItem:hover::before {
+  right: 100%;
+}
+
+.detailItem:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.08),
+    0 8px 25px rgba(236, 138, 169, 0.12);
+  border-color: rgba(236, 138, 169, 0.25);
+}
+
+.detailHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  direction: rtl;
+}
+
+.detailIcon {
+  width: 24px;
+  height: 24px;
+  color: rgba(236, 138, 169, 0.6);
+  stroke-width: 1.8;
+  flex-shrink: 0;
+}
+
+.detailTitle {
+  font-family: 'Assistant', sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: rgba(236, 138, 169, 0.8);
+  margin: 0;
+}
+
+.detailDescription {
+  font-family: 'Assistant', sans-serif;
+  font-weight: 400;
+  font-size: 0.95rem;
+  color: rgba(55, 65, 81, 0.9);
+  line-height: 1.6;
+  margin: 0;
+  text-align: right;
+  direction: rtl;
+}
+
+.drawerFooter {
+  text-align: center;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(250, 215, 225, 0.2);
+  position: relative;
+  z-index: 1;
+}
+
+.drawerPurchaseButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1.25rem 2rem;
+  background: linear-gradient(135deg, rgba(236, 138, 169, 0.8), rgba(248, 180, 195, 0.7));
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(236, 138, 169, 0.3);
+  border-radius: 25px;
+  color: white;
+  font-family: 'Assistant', sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    0 6px 20px rgba(236, 138, 169, 0.2);
+  direction: rtl;
+}
+
+.drawerPurchaseButton:hover {
+  background: linear-gradient(135deg, rgba(220, 120, 150, 0.9), rgba(236, 138, 169, 0.8));
+  transform: translateY(-2px);
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.3),
+    0 10px 30px rgba(236, 138, 169, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .makeupCourseContainer {
+    padding: 1rem;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  
+  .card {
+    overflow: visible;
+  }
+  
+  .header {
+    padding: 1.5rem 1.5rem 1rem;
+  }
+  
+  .mainTitle {
+    font-size: 2rem;
+  }
+  
+  .description {
+    padding: 1rem 1.5rem;
+  }
+  
+  .buttonContainer {
+    padding: 1rem 1.5rem 1.5rem;
+  }
+  
+  .detailsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .drawerContent {
+    padding: 1.5rem;
+  }
+  
+  /* Fix mobile overflow issue */
+  .drawer {
+    overflow: hidden;
+  }
+  
+  .drawerOpen {
+    overflow: visible;
+  }
+}
+
+@media (max-width: 480px) {
+  .makeupCourseContainer {
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  
+  .card {
+    overflow: visible;
+  }
+  
+  .mainTitle {
+    font-size: 1.8rem;
+  }
+  
+  .imageContainer {
+    width: 90%;
+    height: 250px;
+  }
+  
+  .detailsGrid {
+    gap: 1rem;
+  }
+  
+  .detailItem {
+    padding: 1rem;
+  }
+  
+  .buttonContainer {
+    gap: 0.75rem;
+  }
+  
+  .detailsButton,
+  .purchaseButton {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .courseDescription {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+  
+  /* Ensure mobile drawer is fully visible */
+  .drawer {
+    overflow: hidden;
+  }
+  
+  .drawerOpen {
+    overflow: visible;
+  }
+}

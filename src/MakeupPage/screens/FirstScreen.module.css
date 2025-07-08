@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700&display=swap');
+
+.hishtalmutContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Assistant', sans-serif;
+  direction: rtl;
+}
+
+.hishtalmutWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hishtalmutItem {
+  background: linear-gradient(135deg, #ffffff 0%, #fffbfc 100%);
+  border-radius: 16px;
+  box-shadow: 
+    0 4px 20px rgba(251, 182, 206, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(251, 182, 206, 0.1);
+}
+
+.hishtalmutItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    0 8px 25px rgba(251, 182, 206, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95);
+}
+
+.hishtalmutHeader {
+  padding: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+.hishtalmutHeader:hover {
+  background: linear-gradient(135deg, #fffffe 0%, #fffbfc 100%);
+}
+
+.hishtalmutContent {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 0;
+  flex-direction: row-reverse;
+}
+
+.hishtalmutText {
+  flex: 1;
+  min-width: 0;
+}
+
+.hishtalmutTitle {
+  font-family: 'Assistant', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 8px 0;
+  line-height: 1.3;
+}
+
+.hishtalmutDescription {
+  font-family: 'Assistant', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #1f2937;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.hishtalmutImage {
+  flex-shrink: 0;
+  width: 80px;
+  height: 120px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(251, 182, 206, 0.15);
+  background: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hishtalmutImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  background: #ffffff;
+}
+
+.hishtalmutHeader:hover .hishtalmutImage img {
+  transform: scale(1.05);
+}
+
+.hishtalmutToggle {
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(135deg, rgb(248, 215, 215) 30%, rgb(252, 225, 225) 50%, rgb(240, 200, 200) 70%);
+  color: #6b7280;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(240, 200, 200, 0.2);
+}
+
+.hishtalmutToggle:hover {
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 4px 12px rgba(240, 200, 200, 0.3);
+  background: linear-gradient(135deg, rgb(245, 210, 210) 30%, rgb(249, 220, 220) 50%, rgb(235, 190, 190) 70%);
+}
+
+.hishtalmutSyllabus {
+  padding: 0 24px 24px 24px;
+  background: linear-gradient(135deg, #fffffe 0%, #fffbfc 100%);
+  border-top: 1px solid rgba(251, 182, 206, 0.1);
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.syllabusSection {
+  margin-bottom: 24px;
+}
+
+.syllabusSection:last-child {
+  margin-bottom: 0;
+}
+
+.sectionTitle {
+  font-family: 'Assistant', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 16px 0;
+  padding: 16px 20px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(251, 182, 206, 0.2);
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 
+    0 8px 32px rgba(251, 182, 206, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6),
+    inset 0 -1px 0 rgba(251, 182, 206, 0.1);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.sectionTitle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, 
+    transparent 0%, 
+    rgba(251, 182, 206, 0.05) 25%, 
+    rgba(255, 255, 255, 0.1) 50%, 
+    rgba(251, 182, 206, 0.05) 75%, 
+    transparent 100%);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sectionTitle:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    0 12px 40px rgba(251, 182, 206, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8),
+    inset 0 -1px 0 rgba(251, 182, 206, 0.15);
+  border-color: rgba(251, 182, 206, 0.3);
+}
+
+.sectionTitle:hover::before {
+  opacity: 1;
+}
+
+.sectionItems {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.syllabusItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  border: 1px solid rgba(251, 182, 206, 0.05);
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.syllabusItem:hover {
+  background: rgba(251, 182, 206, 0.03);
+  border-color: rgba(251, 182, 206, 0.15);
+  transform: translateX(-4px);
+  box-shadow: 0 2px 8px rgba(251, 182, 206, 0.1);
+}
+
+.syllabusIcon {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(251, 182, 206, 0.25);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(231, 163, 163);
+  box-shadow: 
+    0 8px 24px rgba(251, 182, 206, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7),
+    inset 0 -1px 0 rgba(251, 182, 206, 0.1);
+  margin-top: 2px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.syllabusIcon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.2) 0%, 
+    transparent 50%, 
+    rgba(251, 182, 206, 0.1) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.syllabusItem:hover .syllabusIcon {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 
+    0 12px 32px rgba(251, 182, 206, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8),
+    inset 0 -1px 0 rgba(251, 182, 206, 0.15);
+  border-color: rgba(251, 182, 206, 0.35);
+  color: rgb(220, 145, 145);
+}
+
+.syllabusItem:hover .syllabusIcon::before {
+  opacity: 1;
+}
+
+.syllabusText {
+  font-family: 'Assistant', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #374151;
+  line-height: 1.6;
+  flex: 1;
+  margin-top: 4px;
+}
+
+.whatsappButtonWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 2px solid rgba(251, 182, 206, 0.1);
+}
+
+.whatsappButton {
+  background: linear-gradient(135deg, rgb(248, 215, 215) 30%, rgb(252, 225, 225) 50%, rgb(240, 200, 200) 70%);
+  color: #6b7280;
+  border: 1px solid rgba(240, 200, 200, 0.3);
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-family: 'Assistant', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 
+    0 4px 12px rgba(240, 200, 200, 0.15),
+    inset 0 2px 4px rgba(255, 255, 255, 0.6),
+    inset 0 -2px 4px rgba(240, 200, 200, 0.1);
+}
+
+.whatsappButton:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, rgb(245, 210, 210) 30%, rgb(249, 220, 220) 50%, rgb(235, 190, 190) 70%);
+  box-shadow: 
+    0 6px 16px rgba(240, 200, 200, 0.2),
+    inset 0 2px 6px rgba(255, 255, 255, 0.7),
+    inset 0 -2px 6px rgba(240, 200, 200, 0.15);
+  border-color: rgba(240, 200, 200, 0.4);
+  color: #4b5563;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hishtalmutContainer {
+    padding: 16px;
+  }
+  
+  .hishtalmutContent {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+  
+  .hishtalmutText {
+    order: 2;
+  }
+  
+  .hishtalmutImage {
+    order: 1;
+    width: 120px;
+    height: 180px;
+    border-radius: 20px;
+    box-shadow: 
+      0 8px 32px rgba(251, 182, 206, 0.2),
+      0 4px 16px rgba(251, 182, 206, 0.15),
+      inset 0 2px 4px rgba(255, 255, 255, 0.8);
+    border: 2px solid rgba(251, 182, 206, 0.15);
+    background: linear-gradient(135deg, #ffffff 0%, #fffbfc 100%);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .hishtalmutImage::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, 
+      transparent 0%, 
+      rgba(251, 182, 206, 0.05) 25%, 
+      rgba(255, 255, 255, 0.1) 50%, 
+      rgba(251, 182, 206, 0.05) 75%, 
+      transparent 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+  
+  .hishtalmutImage:hover::before {
+    opacity: 1;
+  }
+  
+  .hishtalmutImage img {
+    border-radius: 18px;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .hishtalmutHeader:hover .hishtalmutImage {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 
+      0 12px 40px rgba(251, 182, 206, 0.25),
+      0 6px 20px rgba(251, 182, 206, 0.2),
+      inset 0 2px 6px rgba(255, 255, 255, 0.9);
+    border-color: rgba(251, 182, 206, 0.25);
+  }
+  
+  .hishtalmutTitle {
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .hishtalmutDescription {
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .hishtalmutToggle {
+    position: static;
+    transform: none;
+    align-self: center;
+    margin-top: 16px;
+  }
+  
+  .hishtalmutHeader {
+    padding: 20px;
+  }
+  
+  .hishtalmutSyllabus {
+    padding: 0 20px 20px 20px;
+  }
+  
+  .sectionTitle {
+    font-size: 16px;
+    padding: 12px 16px;
+    margin-bottom: 12px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+  
+  .syllabusSection {
+    margin-bottom: 20px;
+  }
+  
+  .syllabusItem {
+    gap: 10px;
+    padding: 10px 12px;
+  }
+  
+  .syllabusIcon {
+    width: 28px;
+    height: 28px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+  }
+  
+  .syllabusText {
+    font-size: 14px;
+  }
+  
+  .whatsappButton {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hishtalmutContainer {
+    padding: 12px;
+  }
+  
+  .hishtalmutImage {
+    width: 100px;
+    height: 150px;
+    border-radius: 18px;
+    box-shadow: 
+      0 6px 24px rgba(251, 182, 206, 0.18),
+      0 3px 12px rgba(251, 182, 206, 0.12),
+      inset 0 1px 3px rgba(255, 255, 255, 0.7);
+  }
+  
+  .hishtalmutImage img {
+    border-radius: 16px;
+  }
+  
+  .hishtalmutHeader {
+    padding: 16px;
+  }
+  
+  .hishtalmutSyllabus {
+    padding: 0 16px 16px 16px;
+  }
+  
+  .hishtalmutTitle {
+    font-size: 18px;
+  }
+  
+  .hishtalmutDescription {
+    font-size: 13px;
+  }
+  
+  .sectionTitle {
+    font-size: 15px;
+    padding: 10px 14px;
+    margin-bottom: 10px;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }
+  
+  .syllabusIcon {
+    width: 26px;
+    height: 26px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 8px;
+  }
+  
+  .syllabusSection {
+    margin-bottom: 16px;
+  }
+  
+  .syllabusText {
+    font-size: 13px;
+  }
+  
+  .whatsappButton {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+}
