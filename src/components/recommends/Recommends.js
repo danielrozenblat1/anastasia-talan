@@ -45,21 +45,19 @@ const Recommends=()=>{
                      
       };
       const content = [
-        {
+           {
           type: 'image',
-          src: result1,
+          src: result21,
         },
-        {
-          type: 'image',
-          src: result18,
-        },
-        {
-          type: 'image',
-          src: result2,
-        },
+      
+       
         {
           type: 'image',
           src: result3,
+        },
+          {
+          type: 'image',
+          src: result18,
         },
         {
           type: 'image',
@@ -69,14 +67,15 @@ const Recommends=()=>{
           type: 'image',
           src: result22,
         },
+         {
+          type: 'image',
+          src: result2,
+        },
         {
           type: 'image',
           src: result5,
         },
-           {
-          type: 'image',
-          src: result21,
-        },
+    
         {
           type: 'image',
           src: result6,
