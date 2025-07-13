@@ -53,15 +53,11 @@ const MakeupCourse = () => {
       description: "בניית ביטחון עצמי, טכניקות תקשורת, התמודדות עם לקוחות מתקשות וניהול מצבים לא נעימים"
     },
     {
-      title: "קנייה חכמה מזוודה",
+      title: "קנייה חכמה למזוודה חכמה",
       icon: <ShoppingCart className={styles.detailIcon} />,
-      description: "בחירת מוצרים נכונים, איכות מול מחיר, בניית ערכת איפור מקצועית וחסכונית"
+      description: "רכישות חכמות של בעלת עסק, רשימה מפורטת של ציוד בסיסי, בחירה חכמה של מוצרים, כיצד לשמור על סדר ונקיון בשוטף"
     },
-    {
-      title: "המלצות לציוד",
-      icon: <Star className={styles.detailIcon} />,
-      description: "רשימה מפורטת של הציוד הנדרש, המלצות על מותגים, איפה לקנות ואיך לחסוך"
-    },
+
     {
       title: "צילום ותאורה",
       icon: <Camera className={styles.detailIcon} />,
@@ -73,15 +69,11 @@ const MakeupCourse = () => {
       description: "הקמת אזור צילום בבית, בחירת רקע, סידור תאורה וציוד במרחב מוגבל"
     },
     {
-      title: "זוויות ערכת תמונות",
+      title: "זוויות צילום ועריכה",
       icon: <Palette className={styles.detailIcon} />,
-      description: "זוויות צילום מחמיאות, סוגי תמונות שונים, הרכב פורטפוליו מושלם"
+      description: "זוויות צילום מחמיאות, העמדה נכונה מול מצלמה, עריכת תמונות סטילס ברמה מקצועית"
     },
-    {
-      title: "פתיחת עסק",
-      icon: <Briefcase className={styles.detailIcon} />,
-      description: "כל הליכים המשפטיים, רישיונות, ביטוחים, מסים ועמוד עסק בפייסבוק"
-    },
+
     {
       title: "שיחת מכירה",
       icon: <MessageCircle className={styles.detailIcon} />,
@@ -95,7 +87,7 @@ const MakeupCourse = () => {
     {
       title: "מיתוג",
       icon: <Sparkles className={styles.detailIcon} />,
-      description: "בניית זהות מותג, לוגו, צבעים, גופן וקול המותג שלך ברשתות החברתיות"
+      description: "בניית זהות מותג, היכרות מעמיקה עם אופי העסק שלך"
     },
     {
       title: "אינסטגרם עסקי",
@@ -110,7 +102,7 @@ const MakeupCourse = () => {
     {
       title: "ייעול זמנים",
       icon: <Clock className={styles.detailIcon} />,
-      description: "ניהול יומן עבודה, אפליקציות לתיאום פגישות, חלוקת זמן יעילה בין לקוחות"
+      description: "ניהול יומן עבודה, חלוקת זמן יעילה מול לקוחות, חלוקת זמן יעילה בצילום תוכן"
     },
     {
       title: "שתפים ועוד",

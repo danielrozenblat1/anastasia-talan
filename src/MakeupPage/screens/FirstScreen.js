@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp, Palette, Camera, Users, Clock, Award, Image, Video, Smartphone, Edit, Target, Instagram, Star, Heart, Sparkles, Brush, Eye, Droplets, CheckCircle, Play, Settings, TrendingUp, MessageCircle, Gift, MessageSquare, Lightbulb, GraduationCap, Zap, Crown, Search, Phone, DollarSign, FileText, MapPin, Calendar, Shield } from 'lucide-react';
 import styles from './FirstScreen.module.css';
-import hishtalmut1 from "../../images/אנסטסיה השתלמויות 1.png"
-import hishtalmut2 from "../../images/אנסטסיה השתלמויות 2.png"
+import hishtalmut1 from "../../images/השתלמות סושיאל אנסטסיה.png"
+import hishtalmut2 from "../../images/השתלמות וידאו אנסטסיה.png"
 import hishtalmut3 from "../../images/אנסטסיה השתלמויות 3.png"
 import hishtalmut4 from "../../images/אנסטסיה השתלמויות 4.png" // תמונה חדשה לסילבוס כלות
 
@@ -11,7 +11,7 @@ const hishtalmutData = [
     id: 1,
     title: "השתלמות איפור פרטית",
     description: "שדרגי את כישורי האיפור שלך במפגש מעשי עם מאפרת מקצועית",
-    image: hishtalmut1,
+    image: hishtalmut4,
     sections: [
       {
         title: "מה נלמד?",
@@ -29,7 +29,7 @@ const hishtalmutData = [
         items: [
           { icon: <Clock className="w-5 h-5" />, text: "מפגש אחד של 4 שעות" },
           { icon: <Award className="w-5 h-5" />, text: "תעודת השתתפות" },
-          { icon: <Image className="w-5 h-5" />, text: "תמונות סטייל איכותיות מוכנות לפרסום" },
+      
           { icon: <Camera className="w-5 h-5" />, text: "צילום מקצועי בכל תנאי אפשרי" }
         ]
       },
@@ -37,6 +37,7 @@ const hishtalmutData = [
         title: "בונוסים",
         items: [
           { icon: <Lightbulb className="w-5 h-5" />, text: "טיפים שילוו אותך בהמשך בהתבסס על הניסיון והרקע שלי" },
+              { icon: <Image className="w-5 h-5" />, text: "תמונות סטילס איכותיות מוכנות לפרסם" },
           { icon: <GraduationCap className="w-5 h-5" />, text: "הכוונה להשתלמויות נוספות במידת הצורך" }
         ]
       }
@@ -44,7 +45,7 @@ const hishtalmutData = [
   },
   {
     id: 2,
-    title: "השתלמות צילום ועריכה",
+    title: "השתלמות צילום ועריכת סרטונים",
     description: "למדי לצלם ולערוך סרטונים בצורה פשוטה אך מקצועית ופרקטית",
     image: hishtalmut2,
     sections: [
@@ -62,7 +63,7 @@ const hishtalmutData = [
         items: [
           { icon: <Play className="w-5 h-5" />, text: "צילום לפני ואחרי" },
           { icon: <Brush className="w-5 h-5" />, text: "צילום של 2-3 שלבים בתהליך האיפור שלך תוך כדי שאת מדריכה את הדוגמנית" },
-          { icon: <Palette className="w-5 h-5" />, text: "צילום של 3-6 מוצרי איפור" }
+          { icon: <Palette className="w-5 h-5" />, text: "צילום של 2-3 מוצרי איפור" }
         ]
       },
       {
@@ -93,7 +94,7 @@ const hishtalmutData = [
     id: 3,
     title: "השתלמות מיתוג וסושיאל",
     description: "שדרוג המותג שלך ובניית נוכחות מוצלחת במדיה החברתית למשיכת לקוחות",
-    image: hishtalmut3,
+    image: hishtalmut1,
     sections: [
       {
         title: "בניית המותג",
@@ -135,7 +136,7 @@ const hishtalmutData = [
     id: 4,
     title: "פריצה לתחום הכלות",
     description: "בניית אסטרטגיה שיווקית והתנהלות עסקית נכונה על מנת לפרוץ לתחום הכלות",
-    image: hishtalmut4,
+    image: hishtalmut3,
     sections: [
       {
         title: "הכרות ואבחון",

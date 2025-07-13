@@ -5,7 +5,8 @@ const FirstScreen = () => {
   return <>
     <div className={styles.title} style={{paddingTop:"80px"}}>ברוכה הבאה פרינססה</div>
     <div className={styles.description}>
-      אם הגעת לעמוד הזה סימן שאת  תותחית, את אוהבת ללמוד ולהשתפר בחלקים מאוד מסויימים בעסק אבל.. 
+      אם הגעת לכאן סימן שאת אוהבת ללמוד ומחפשת
+להתפתח בפן האישי והמקצועי אבל..
     </div>
     
     <div className={styles.featuresContainer}>

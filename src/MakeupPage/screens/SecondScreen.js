@@ -19,7 +19,7 @@ const SecondScreen=()=>{
                             <SmallBox text="להוציא תוכן ברמה גבוהה שיביא לך פניות" icon={makeup}/>
                     </div>
                              <div className={styles.title}>ולכן</div>
-                                <div className={styles.description}>ריכזתי עבורך את ההשתלמויות שאני מעבירה כדי שכל  מאפרת תותחית תוכל לחזק בדיוק מה שהיא מרגישה שמונע ממנה להתקדם היום</div>
+                                <div className={styles.description}>ריכזתי עבורך את כל ההשתלמויות הפרטיות שאני מעבירה כך שתוכלי לבחור את התחום שבו את מתקשה ביותר, לחזק את עצמך ולרכוש כלים חדשים:</div>
     </>
 }
 export default SecondScreen

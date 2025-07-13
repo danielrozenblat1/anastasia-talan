@@ -8,6 +8,7 @@ import middleImage from "../../images/אנסטסיה תלן תדמית.png";
 import rightImage from "../../images/אנסטסיה טלן איפור 1.png"
 import leftImage from "../../images/אנסטסיה תמונה שמאל.png"
 import GradientLoader from '../../components/loader/Loader';
+
 const FirstScreen = () => {
   const [imagesLoaded, setImagesLoaded] = useState(false);
 
@@ -46,6 +47,14 @@ const FirstScreen = () => {
       
       <div className={styles.contentBox}>
         <h1 className={styles.title}>ANASTASIA TALAN HAKIM</h1>
+        
+        <p className={styles.description}>
+          מאפרת כלות מקצועית || מדריכה
+        </p>
+        
+        <p className={styles.description}>
+          לכל השירותים והמוצרים שלי תלחצי על התפריט מצד ימין
+        </p>
   
         {/* <div className={styles.buttonContainer}>
         <PinkScrollButton text="אני עומדת להתחתןןןן" icon={ring} to="כלה"/>
