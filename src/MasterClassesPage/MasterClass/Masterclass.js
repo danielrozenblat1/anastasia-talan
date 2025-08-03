@@ -77,7 +77,7 @@ const MasterclassSection = () => {
         "קומבו שפתיים כלתי מבוקש",
         "טכניקה מיוחדת לנמשים טבעיים"
       ],
-      masterclassUrl: "https://example.com/bridal-masterclass"
+      masterclassUrl: "https://meshulam.co.il/s/da74ccbc-7a73-aaaa-a759-5888a5f5fbec"
     },
     {
       image: masterclass2,
@@ -92,7 +92,7 @@ const MasterclassSection = () => {
         "טכניקה מיוחדת לשרטוט גבות מאפס",
         "הקומבו שפתיים המפורסם שלי"
       ],
-      masterclassUrl: "https://example.com/dark-skin-masterclass"
+      masterclassUrl: "https://meshulam.co.il/s/3a06329e-7185-a398-1a8c-f8a7468b0a4d"
     }
   ];
 
