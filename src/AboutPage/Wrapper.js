@@ -11,6 +11,7 @@ import SecondScreen from './screens/SecondScreen';
 import SeventhScreen from './screens/SeventhScreen';
 import SixthScreen from './screens/SixthScreen';
 import ThirdScreen from "./screens/ThirdScreen"
+import PrivacyPolicy from "../privacy/Privacy";
 
 const Wrapper=()=>{
 
@@ -31,6 +32,12 @@ return <>
   <FifthScreen/>
 
   <SeventhScreen/>
+  <PrivacyPolicy 
+  ownerName="אנסטסיה טלן חכים" 
+  email="nastiatalan@gmail.com" 
+  phone="052-758-7175" 
+  domain="http://anastasiatalanhakim.co.il/" 
+/>
   <ByMe/>
   </>
 
